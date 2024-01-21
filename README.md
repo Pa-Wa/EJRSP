@@ -19,5 +19,10 @@ Business Analytics, Universität Siegen
 * Main.py: Ausführung der einzelnen Methoden um die EJRSP-Instanzen zu lösen
 * data_gen.py: Generierung der EJRSP-Instanzen
 * methods:
-    * test   
+    * ncp.py: Naive Konstruktionsheuristik
+    * sh.py: Smoothing Heuristik
+    * ts.py: Tabu-Suche
+    * re_opt.py: Re-Optimierung (wird für die TS genutzt)
+    * milp_relax.py: LP-Relaxierung (wird für die TS genutzt)
+    * milp.py: MILP (Solver: Gurobi)
 * data_main.pk1: Beispielhafter Datensatz
