@@ -16,7 +16,8 @@ Business Analytics, Universität Siegen
 ---
 
 #### Doku:
-* Main.py: Auszuführende Datei um Lösungsverfahren für die einzelnen Instanzen vor
-* data_gen.py:
+* Main.py: Ausführung der einzelnen Methoden um die EJRSP-Instanzen zu lösen
+* data_gen.py: Generierung der EJRSP-Instanzen
 * methods:
-* data_main.pk1: 
+    * test   
+* data_main.pk1: Beispielhafter Datensatz
