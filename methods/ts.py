@@ -73,7 +73,7 @@ def TS(jobs, periods, e_trans, e_not_trans, e_trans_sorted):
             #schedule_best = np.copy(schedule)
             E_best = np.max(PEP)
             break
-        schedule, E_best_swap, PEP = ReOpt(jobs, periods, e_trans, schedule, PEP, e_trans_sorted) # bei Variante ohne Re-Opt einfach auskommentieren und zusätzlich nächste If-Abfrage
+        schedule, E_best_swap, PEP = ReOpt(jobs, periods, e_trans, np.copy(schedule), np.copy(PEP), e_trans_sorted) # bei Variante ohne Re-Opt einfach auskommentieren und zusätzlich nächste If-Abfrage
         # bei passiver Variante nur Output ändern -> schedule und PEP vor dem "=" entfernen, Anpassung in Re-Opt Datei notwendig
         # bei Variante mit nur jede 2. Iteration etc. einfach eine If Anweisung mit "it_count % 2 == 0:" vor Funktionsaufruf 
         if E_best_swap == E_MILP_Relax:
